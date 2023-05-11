@@ -1,15 +1,9 @@
-import { useState } from "react";
-import { UserProps } from "./types/user";
 import Search from "./components/Search/Search";
-
+import classes from './App.module.css';
 function App() {
-
-  const [user, setUser] = useState<UserProps | null>(null);
-
-  
-
   return (
-    <div>
+    <div className={classes.app}>
+      <h1>GitHub Finder</h1>
       <Search  />
     </div>
   );
