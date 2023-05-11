@@ -4,7 +4,7 @@ const User = ({login, avatar_url, followers, following, location}: UserProps) =>
     console.log(login)
   return (
     <div>
-      User
+        <img src={avatar_url} alt={login}/>
     </div>
   )
 }
